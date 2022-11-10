@@ -10,7 +10,7 @@ double A(double* p) {
 	}
 	s1 /= 5;
 	for (i = 0; i < 5; i++) {
-		s2 += (p[i] - s1) * (p[i] - s1);
+		s2 += pow((p[i] - s1), 2);
 	}
 	s2 /= 5;
 	return sqrt(s2);
